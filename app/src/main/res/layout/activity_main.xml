@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="24dp"
+    android:orientation="vertical"
+    android:background="?attr/cardbackground">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        >
+    <TextView
+        android:textColor="?attr/textcolor"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="Modo Oscuro"
+        app:layout_constraintTop_toBottomOf="@+id/sb"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="67dp" />
+    <Switch
+        android:id="@+id/sw1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Tema"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:layout_editor_absoluteX="67dp"
+        tools:ignore="MissingConstraints"
+        android:textColor="?attr/textcolor"
+        />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ejemplo"
+        android:textColor="?attr/textcolor"
+
+        android:backgroundTint="?attr/tintcolor"/>
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="110dp"
+        android:layout_height="52dp"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toTopOf="@+id/sb"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.661"
+        android:textColor="?attr/textcolor"
+        />
+
+    <SeekBar
+        android:id="@+id/sb"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="324dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="444dp"
+        android:max="40"
+        android:min="20"
+        android:progress="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="?attr/cardbackground"/>
+
+
+</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prueba"
+        android:id="@+id/cambio"/>
+
+
+
+</LinearLayout>
