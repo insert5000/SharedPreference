@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         sharedpref = new Prefe(this);
         if(sharedpref.cargarModoNoche()==true){
             setTheme(R.style.darktheme);
@@ -49,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 restartApp();
             }
         });
+        seebbar();
     }
 
     public void restartApp(){
